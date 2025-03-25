@@ -66,13 +66,17 @@
         "test:types":[
             "phpstan"
         ],
+        "test:typos":[
+            "peck"
+        ],
         "test:lint":[
             "pint --test"
         ],
         "test":[
             "@test:unit",
             "@test:lint",
-            "@test:types"
+            "@test:types",
+            "@test:typos"
         ]
     },
     "extra": {
